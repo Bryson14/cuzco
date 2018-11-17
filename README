@@ -1,0 +1,21 @@
+README
+
+The purpose of this project is to learn about data analysis, creating API and servers.
+These are very useful skills and are very relevant for the labor force. 
+
+API
+For this project, we gathered data from alpaca, a financial institution that requires the same info as a bank 
+or any other financial institution. Using the correct documentation, it sends financial data such as stocks, 
+market values, company accounting statistics. It is also able to take calls that will buy and sell stocks, options,
+and other market related securities.
+
+SERVER
+This is our data frame for our pull and get requests to and from the alpaca API.
+It is from this server that our data is analyzed and understood. Django was used…
+
+ALGO
+The whole S&P 500 is first scanned and compared for correlation, results in 127765 correlation comparisons.
+As this is a very costly function, correlation is relatively fast. If the correlation between any two securities is
+greater than .80, then the identified pair further analyzed by cointegration test and an augmented dicky fuller test.
+If the result of this deeper test is less than .02, then the pair is returned as a pair capable to implementing a
+profitable pairs trading strategy. This analysis is run every month in case of stocks falling out of correlation with others.
